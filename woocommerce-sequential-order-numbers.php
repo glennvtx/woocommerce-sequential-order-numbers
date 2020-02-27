@@ -347,7 +347,7 @@ class WC_Seq_Order_Number {
 		global $wpdb;
 
 		if (
-			'/wc/v4/orders' === $request->get_route() &&
+			'/wc/v3/orders' === $request->get_route() &&
 			isset( $request['number'] )
 		) {
 			// Handles 'number' value here and modify $args.
